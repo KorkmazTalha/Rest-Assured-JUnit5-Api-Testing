@@ -29,7 +29,7 @@ public class UserApiRegressionTests extends BaseTest {
             .body("body", notNullValue())  // Body alanının boş olmadığı doğrulanıyor
             
             // İster 3: Belirli bir süre (X süre) altında cevap dönüldüğünün kontrolü
-            // 2000 milisaniye (3 saniye) altında dönmesi bekleniyor
+            // 3000 milisaniye (3 saniye) altında dönmesi bekleniyor
             .time(Matchers.lessThan(3000L));
     }
 
